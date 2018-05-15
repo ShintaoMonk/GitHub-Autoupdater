@@ -59,4 +59,5 @@ then
 else
   echo "#Use as following:" > repositories
   echo "#{directory} {github link} {action = pull or push}" >> repositories
+  echo "Please place repositories formatted accordingly in the repositories file"
 fi
