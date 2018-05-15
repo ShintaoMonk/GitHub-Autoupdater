@@ -1,2 +1,4 @@
 #Use as following:
 #{directory} {github link} {action = pull or push}
+/home/thomas/Git/minecraft-server https://github.com/ShintaoMonk/minecraft-server.git pull
+
