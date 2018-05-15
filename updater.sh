@@ -37,8 +37,22 @@ then
       done
       #Actual Script
       
-      
-      
+      if [ -e $directory ]
+      then
+        cd $directory
+        if [[ $action == "" ]]
+        then
+          git pull
+        else
+          git $action
+        fi  
+      else
+        mkdir $directory
+        cd $directory
+        cd ..
+        rm -R $directory
+        git clone $link
+      fi
       
     fi
   done
